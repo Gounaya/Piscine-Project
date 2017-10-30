@@ -1,0 +1,10 @@
+/home/gounaya/Documents/COO/Projet2_Piscine/COO-Piscine/src/test/java/fil/coo/Schedulers/MockStepAction.java
+/home/gounaya/Documents/COO/Projet2_Piscine/COO-Piscine/src/test/java/fil/coo/Schedulers/SchedulerTest.java
+/home/gounaya/Documents/COO/Projet2_Piscine/COO-Piscine/src/test/java/fil/coo/Actions/FreeResourceTest.java
+/home/gounaya/Documents/COO/Projet2_Piscine/COO-Piscine/src/test/java/fil/coo/Actions/TakeResourceActionTest.java
+/home/gounaya/Documents/COO/Projet2_Piscine/COO-Piscine/src/test/java/fil/coo/Actions/ActionTest.java
+/home/gounaya/Documents/COO/Projet2_Piscine/COO-Piscine/src/test/java/fil/coo/Schedulers/FairSchedulerTest.java
+/home/gounaya/Documents/COO/Projet2_Piscine/COO-Piscine/src/test/java/fil/coo/Resource/ResourcePoolTest.java
+/home/gounaya/Documents/COO/Projet2_Piscine/COO-Piscine/src/test/java/fil/coo/Schedulers/SequentialSchedulerTest.java
+/home/gounaya/Documents/COO/Projet2_Piscine/COO-Piscine/src/test/java/fil/coo/Resource/MockResourcePool.java
+/home/gounaya/Documents/COO/Projet2_Piscine/COO-Piscine/src/test/java/fil/coo/Actions/ForeseeableActionTest.java

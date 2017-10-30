@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>6</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>864</x>
+      <y>30</y>
+      <w>144</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Abstract class&gt;&gt;
+Package::Actions
+- Action -
+--
+
+--
++Action()
++doStep(): void
+#realStep()[abstract]: void 
+#StopCondition()[abstract]: void
++isFinished(): boolean
++getState(): ActionState</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>324</y>
+      <w>78</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Enumeration&gt;&gt;
+Package::Action
+ActionState
+--
+READY
+INPROGRESS
+FINISHED
+--
++ActionState()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1122</x>
+      <y>264</y>
+      <w>150</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Abstract class&gt;&gt;
+Package::Actions
+Scheduler
+--
+#currentIndex: int
+#ActionList: ArrayList&lt;Action&gt;
+--
++Scheduler()
++nextAction(): int
++addAction(Action): void
++realStep(): void 
++StopCondition(): boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1086</x>
+      <y>462</y>
+      <w>114</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+Package::Actions
+FairScheduler
+--
+
+--
++FairScheduler()
++nextAction(): int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1206</x>
+      <y>462</y>
+      <w>126</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+Package::Actions
+SequentialScheduler
+--
+
+--
++SequentialScheduler()
+nextAction(): int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>438</x>
+      <y>300</y>
+      <w>138</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+Package::Actions
+- foreseeableAction -
+--
+- totalTime: int 
+- waitingTime: int
+- nameOfAction: String
+--
++foreseeableAction(int,String)
++realStep(): void
+#StopCondition(): boolean 
++toString(): String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1134</x>
+      <y>390</y>
+      <w>36</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>40.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1218</x>
+      <y>390</y>
+      <w>60</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;80.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1002</x>
+      <y>78</y>
+      <w>204</w>
+      <h>198</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;320.0;310.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>654</x>
+      <y>318</y>
+      <w>264</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Abstract class&gt;&gt;
+Package::Actions
+- ResourceAction&lt;R&gt; -
+--
++Name: String
+#pool: ResourcePool&lt;R&gt;
+#user: ResourceUser&lt;R&gt;
+--
++ResourceAction(ResourcePool&lt;R&gt;, Resource&lt;R&gt;, String)
++getNameSwimmer(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>480</x>
+      <y>480</y>
+      <w>276</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+Package::Actions
+- FreeResourceAction&lt;R&gt; -
+--
+
+--
++FreeResourceAction(ResourcePool&lt;R&gt;, Resource&lt;R&gt;, String)
++realStep(): void
++StopCondition(): boolean
++toString():String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>768</x>
+      <y>480</y>
+      <w>282</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+Package::Actions
+- TakeResourceAction&lt;R&gt; -
+--
+
+--
++TakeResourceAction(ResourcePool&lt;R&gt;, Resource&lt;R&gt;, String)
++realStep(): void
++StopCondition(): boolean
++toString():String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>780</x>
+      <y>144</y>
+      <w>102</w>
+      <h>186</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>150.0;10.0;10.0;290.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>498</x>
+      <y>108</y>
+      <w>378</w>
+      <h>204</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>610.0;10.0;10.0;320.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>624</x>
+      <y>408</y>
+      <w>102</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>150.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>846</x>
+      <y>408</y>
+      <w>78</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;110.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>30</x>
+      <y>498</y>
+      <w>126</w>
+      <h>102</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+Package::Resource
+- BasketPool -
+--
+
+--
++BasketPool(int)
++createResource(): Basket
++toString(): String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>198</x>
+      <y>498</y>
+      <w>126</w>
+      <h>102</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+Package::Resource
+- CubiclePool -
+--
+
+--
++CubiclePool(int)
++createResource(): Cubicle
++toString(): String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>114</x>
+      <y>330</y>
+      <w>132</w>
+      <h>102</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Abstract class&gt;&gt;
+Package::Resource
+- ResourcePool&lt;R&gt; -
+--
+
+--
++ResourcePool(int)
++createResource()[abstract]
++provideResource()
++recoverResource(R): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>222</x>
+      <y>426</y>
+      <w>48</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;60.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>84</x>
+      <y>426</y>
+      <w>72</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>100.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>126</x>
+      <y>186</y>
+      <w>108</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+Package::Resource
+- Basket -
+--
+- description : String
+--
++Basket()
++description(): String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>258</x>
+      <y>186</y>
+      <w>108</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+Package::Resource
+- Cubicle -
+--
+- description : String
+--
++Cubicle()
++description(): String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>258</x>
+      <y>84</y>
+      <w>78</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;110.0;170.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>144</x>
+      <y>84</y>
+      <w>84</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>120.0;10.0;10.0;170.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>186</x>
+      <y>30</y>
+      <w>102</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+Package::Resource
+- Resource -
+--
+
+--
++description(): String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>42</y>
+      <w>108</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+Package::Resource
+ResourceUser&lt;R&gt;
+--
+# resource : R
+--
++ResourceUser()
++getResource(): R
++setResource(R): void
++resertResource: void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>414</x>
+      <y>24</y>
+      <w>240</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+Package::piscine
+- Swimmer -
+--
+- name: String
+- undressTime: int
+- swimmingTime: int
+- dressTime: int
+- cub: CubiclePool
+- basket: BasketPool
+- rUserCubicle: ResourceUser&lt;Cubicle&gt;
+- rUserBasket: ResourceUser&lt;Basket&gt;
+--
++Swimmer(String,BasketPool,CubiclePool, int, int, int)
++getName(): String
++realStep(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>204</y>
+      <w>90</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+Package::piscine
+- SwimmingPool -
+--
+
+--
++SwimmingPool()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
