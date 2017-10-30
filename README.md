@@ -1,5 +1,3 @@
-Project done with GOUNAYA Oussama & Errami Abdeljalil 
-Group-4
 You will find attached the complete project with code java, JUnit tests and UML.
 
 # Project Swimming Pool
