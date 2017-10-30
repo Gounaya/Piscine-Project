@@ -2,7 +2,7 @@ package fil.coo.Resource;
 
 /**
  * Resource manager that provides Basket-type resources
- * @author gounaya & errami
+ * @author gounaya 
  *
  */
 public class BasketPool extends ResourcePool<Basket>{

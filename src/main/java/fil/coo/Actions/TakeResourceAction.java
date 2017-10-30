@@ -7,7 +7,7 @@ import fil.coo.Resource.ResourcePool;
 import fil.coo.Resource.ResourceUser;
 /**
  * Give a resource to an user
- * @author gounaya & errami
+ * @author gounaya
  *
  * @param <R> type of the resource
  */

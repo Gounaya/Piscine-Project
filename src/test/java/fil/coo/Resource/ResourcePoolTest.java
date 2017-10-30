@@ -6,11 +6,7 @@ import org.junit.Test;
 import fil.coo.Exceptions.NoSuchElementException;
 import fil.coo.Resource.Cubicle;
 import fil.coo.Resource.ResourcePool;
-/**
- * 
- * @author errami & gounaya
- *
- */
+
 public class ResourcePoolTest {
 
 	/**

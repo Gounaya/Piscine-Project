@@ -3,7 +3,7 @@ package fil.coo.Resource;
 
 /**
  * User who use the resource
- * @author gounaya & errami
+ * @author gounaya
  *
  * @param <R> type of the resource
  */

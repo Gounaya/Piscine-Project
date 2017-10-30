@@ -7,7 +7,7 @@ import fil.coo.Resource.BasketPool;
 import fil.coo.Resource.CubiclePool;
 /**
  * 
- * @author gounaya & errami
+ * @author gounaya
  *
  */
 public class SwimmingPool {

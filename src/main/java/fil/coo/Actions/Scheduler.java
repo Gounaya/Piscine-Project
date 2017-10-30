@@ -9,7 +9,7 @@ import fil.coo.Exceptions.SchedulerStartedException;
  * Scheduler is an action that has a set of actions
  * these sub-actions can also be scheduler too 
  * A Scheduler is finished when all sub-schedulers are finished
- * @author gounaya & errami
+ * @author gounaya
  *
  */
 public abstract class Scheduler extends Action{

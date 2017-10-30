@@ -4,7 +4,7 @@ package fil.coo.Actions;
 /**
  * Foreseeable action - It's an action that we already know the invocation number of the doStep()
  * 
- * @author gounaya & errami
+ * @author gounaya
  *
  */
 public class foreseeableAction extends Action{

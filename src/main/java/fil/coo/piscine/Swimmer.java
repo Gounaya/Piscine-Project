@@ -2,7 +2,7 @@ package fil.coo.piscine;
 
 /**
  * Class creating a swimmer 
- * @author gounaya & errami
+ * @author gounaya
  *
  */
 import fil.coo.Actions.FreeResourceAction;

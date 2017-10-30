@@ -1,7 +1,7 @@
 package fil.coo.Resource;
 /**
  * Basket class
- * @author gounaya & errami
+ * @author gounaya
  *
  */
 public class Basket implements Resource{

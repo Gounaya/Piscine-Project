@@ -1,7 +1,7 @@
 package fil.coo.Resource;
 /**
  * 
- * @author gounaya & errami
+ * @author gounaya
  *
  */
 public interface Resource {

@@ -3,7 +3,7 @@ package fil.coo.Actions;
 import fil.coo.Exceptions.ActionFinishedException;
 /**
  * Action - It's an object that progresses from initial state READY to final state by calling successively his doStep() method
- * @author gounaya & errami
+ * @author gounaya
  *
  */
 public abstract class Action {

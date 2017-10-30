@@ -8,7 +8,7 @@ import fil.coo.Exceptions.NoSuchElementException;
  * Resource manager that provides a resource from its pool.
  * Return a resource to the pool to free it and make it available again
  * 
- * @author gounaya & errami
+ * @author gounaya
  *
  * @param <R> type of the resource
  */

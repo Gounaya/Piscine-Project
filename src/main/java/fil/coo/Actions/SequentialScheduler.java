@@ -2,7 +2,7 @@ package fil.coo.Actions;
 
 /**
  * this type of Scheduler finish the action started before moving on to the next
- * @author gounaya & errami
+ * @author gounaya
  *
  */
 public class SequentialScheduler extends Scheduler{

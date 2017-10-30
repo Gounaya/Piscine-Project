@@ -7,7 +7,7 @@ import fil.coo.Resource.ResourceUser;
 
 /**
  * Freeing resource from resource pool
- * @author gounaya & errami
+ * @author gounaya
  *
  * @param <R> The type of resource 
  */

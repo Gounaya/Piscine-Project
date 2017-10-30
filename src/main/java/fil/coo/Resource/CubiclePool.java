@@ -2,7 +2,7 @@ package fil.coo.Resource;
 
 /**
  * Resource manager that provides Cubicle-type resources
- * @author gounaya & errami
+ * @author gounaya
  *
  */
 public class CubiclePool extends ResourcePool<Cubicle>{

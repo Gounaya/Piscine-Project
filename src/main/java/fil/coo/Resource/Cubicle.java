@@ -1,7 +1,7 @@
 package fil.coo.Resource;
 /**
  * Cubicle class
- * @author gounaya & errami
+ * @author gounaya
  *
  */
 public class Cubicle implements Resource{
